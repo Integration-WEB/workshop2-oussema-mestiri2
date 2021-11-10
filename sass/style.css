@@ -1,0 +1,25 @@
+.text {
+  color: red;
+  font-size: 20px;
+}
+
+.textarea {
+  color: red;
+  font-size: 20px;
+}
+
+.h1 {
+  color: red;
+  font-size: 20px;
+}
+
+.button {
+  border: 5px solid red;
+}
+
+.langages::before {
+  content: "HTML";
+  content: "REACT";
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+$primary-color:yellow;
+
+.text {
+    color: red;
+    font-size: 20px;
+}
+
+.textarea {
+    color: red;
+    font-size: 20px;
+}
+
+.h1 {
+    color: red;
+    font-size: 20px;
+}
+
+@mixin border-button($p1,$p2:solid,$p3:blue) {
+    border: $p1 $p2 $p3;
+}
+
+.button{
+    @include border-button(5px, solid,red )
+}
+
+@function set-white($color) {
+    @if ($color == white) {
+      @return #000;
+    }@else{
+        @return white;
+    }
+}
+
+@function firstOfList($list){
+    @return nth($list, 1);
+  }
+
+@function lastOfList($list){
+    @return nth($list, length($list));
+  }
+
+  $langages : "HTML","CSS3","JAVA","REACT";
+  .langages::before{
+    content: firstOfList($langages);
+    content: lastOfList($langages);
+
+  }
+  
